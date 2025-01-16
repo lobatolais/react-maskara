@@ -1,0 +1,30 @@
+{
+  "name": "react-maskara",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "A lightweight React library for easily applying customizable input masks to input fields.",
+  "keywords": [
+    "react",
+    "input-mask",
+    "text-mask",
+    "mask"
+  ],
+  "homepage": "https://github.com/lobatolais/react-maskara",
+  "bugs": {
+    "url": "https://github.com/lobatolais/react-maskara/issues"
+  },
+  "author": "Lais Lobato <laisrlobato@gmail.com> (https://github.com/lobatolais)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lobatolais/react-maskara.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  }
+}
