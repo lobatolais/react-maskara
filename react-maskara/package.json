@@ -31,5 +31,8 @@
   "peerDependencies": {
     "react": ">= 19",
     "react-dom": ">= 19"
+  },
+  "dependencies": {
+    "client-only": "^0.0.1"
   }
 }
