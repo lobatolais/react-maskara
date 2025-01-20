@@ -10,6 +10,7 @@
     "ci": "npm run build && npm run format:check"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.11",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "prettier": "^3.4.2",
