@@ -1,18 +1,18 @@
-import "client-only"
+import 'client-only'
 
 import {
   type ChangeEvent,
   useImperativeHandle,
   useRef,
   type ComponentPropsWithRef,
-} from "react"
-import { formatValueWithMask } from "./utils/format-value-with-mask.js"
-import { type MaskedInputProps } from "./types.js"
+} from 'react'
+import { formatValueWithMask } from './utils/format-value-with-mask.js'
+import { type MaskedInputProps } from './types.js'
 
 export const MaskedInput = ({
   mask,
   ...props
-}: MaskedInputProps & ComponentPropsWithRef<"input">) => {
+}: MaskedInputProps & ComponentPropsWithRef<'input'>) => {
   const { ref: forwardedRef, onChange } = props
 
   const inputRef = useRef<HTMLInputElement>(null)
