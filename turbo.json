@@ -8,6 +8,13 @@
     "dev": {
       "persistent": true,
       "cache": false
+    },
+    "test": {
+      "cache": false,
+      "dependsOn": []
+    },
+    "test:watch": {
+      "cache": false
     }
   }
 }

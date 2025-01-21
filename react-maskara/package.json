@@ -26,6 +26,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "build": "tsc"
   },
   "peerDependencies": {
