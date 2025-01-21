@@ -1,6 +1,6 @@
 {
   "name": "react-maskara",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "A lightweight React library for easily applying customizable input masks to input fields.",
   "keywords": [
@@ -26,6 +26,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "build": "tsc"
   },
   "peerDependencies": {
