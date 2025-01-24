@@ -1,3 +1,7 @@
 export default function Home() {
-  return <h1>react-maskara</h1>
+  return (
+    <main className="max-w-[60rem] bg-foreground mx-auto min-h-dvh">
+      react-maskara
+    </main>
+  )
 }
