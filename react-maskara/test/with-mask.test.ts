@@ -75,5 +75,4 @@ describe('withMask', () => {
     expect(result.name).toBe('phone')
     expect(result.id).toBe('phone-input')
   })
-
 })

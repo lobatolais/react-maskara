@@ -28,25 +28,42 @@ describe('MaskedInput', () => {
 
   it('should call onChange prop with the event', () => {
     const onChange = vi.fn()
-    render(<MaskedInput mask="999-999" onChange={onChange} />)
+    render(
+      <MaskedInput
+        mask="999-999"
+        onChange={onChange}
+      />,
+    )
     const input = screen.getByRole('textbox')
 
     fireEvent.change(input, { target: { value: '123456' } })
 
     expect(onChange).toHaveBeenCalledOnce()
-    expect(onChange).toHaveBeenCalledWith(expect.objectContaining({ type: 'change' }))
+    expect(onChange).toHaveBeenCalledWith(
+      expect.objectContaining({ type: 'change' }),
+    )
   })
 
   it('should forward ref to the input element', () => {
     const ref = createRef<HTMLInputElement>()
-    render(<MaskedInput mask="999-999" ref={ref} />)
+    render(
+      <MaskedInput
+        mask="999-999"
+        ref={ref}
+      />,
+    )
 
     expect(ref.current).toBeInstanceOf(HTMLInputElement)
   })
 
   it('should forward ref as callback ref', () => {
     const callbackRef = vi.fn()
-    render(<MaskedInput mask="999-999" ref={callbackRef} />)
+    render(
+      <MaskedInput
+        mask="999-999"
+        ref={callbackRef}
+      />,
+    )
 
     expect(callbackRef).toHaveBeenCalledWith(expect.any(HTMLInputElement))
   })
@@ -64,5 +81,4 @@ describe('MaskedInput', () => {
     expect(input).toHaveProperty('placeholder', 'Enter number')
     expect(input.getAttribute('aria-label')).toBe('test input')
   })
-
 })
