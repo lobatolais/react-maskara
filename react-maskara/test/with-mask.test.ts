@@ -1,4 +1,3 @@
-// @vitest-environment jsdom
 import { describe, it, expect, vi } from 'vitest'
 import type { RefCallback } from 'react'
 import { withMask } from '../src/with-mask.js'
