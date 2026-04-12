@@ -1,4 +1,5 @@
 @import 'tailwindcss';
 
-@theme {
+body {
+  font-family: 'Geist', sans-serif;
 }
