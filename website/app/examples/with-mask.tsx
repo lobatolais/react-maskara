@@ -64,65 +64,67 @@ export const Form = () => {
 
       <div className="space-y-2">
         <h4 className="text-sm font-medium text-stone-700">Parameters</h4>
-        <table className="w-full text-sm border border-gray-200 rounded-md overflow-hidden">
-          <thead className="bg-stone-50 text-stone-600 text-left">
-            <tr>
-              <th className="px-3 py-2.5 font-medium border-b border-gray-200">
-                Parameter
-              </th>
-              <th className="px-3 py-2.5 font-medium border-b border-gray-200">
-                Type
-              </th>
-              <th className="px-3 py-2.5 font-medium border-b border-gray-200">
-                Description
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-gray-100 last:border-0">
-              <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
-                el
-              </td>
-              <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
-                {'{ ref?: RefCallback<HTMLInputElement> }'}
-              </td>
-              <td className="px-3 py-2.5 text-stone-600">
-                The props object to extend. Typically the return value of{' '}
-                <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
-                  register()
-                </code>{' '}
-                from a form library, or{' '}
-                <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
-                  {'{}'}
-                </code>{' '}
-                for standalone use. The original{' '}
-                <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
-                  ref
-                </code>{' '}
-                callback, if present, is preserved and called after the mask ref
-                runs.
-              </td>
-            </tr>
-            <tr className="border-b border-gray-100 last:border-0">
-              <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
-                options.mask
-              </td>
-              <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
-                string
-              </td>
-              <td className="px-3 py-2.5 text-stone-600">
-                The mask pattern string. See{' '}
-                <a
-                  href="#mask-patterns"
-                  className="underline underline-offset-2"
-                >
-                  Mask Patterns
-                </a>{' '}
-                for syntax.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm border border-gray-200 rounded-md overflow-hidden">
+            <thead className="bg-stone-50 text-stone-600 text-left">
+              <tr>
+                <th className="px-3 py-2.5 font-medium border-b border-gray-200">
+                  Parameter
+                </th>
+                <th className="px-3 py-2.5 font-medium border-b border-gray-200">
+                  Type
+                </th>
+                <th className="px-3 py-2.5 font-medium border-b border-gray-200">
+                  Description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-100 last:border-0">
+                <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
+                  el
+                </td>
+                <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
+                  {'{ ref?: RefCallback<HTMLInputElement> }'}
+                </td>
+                <td className="px-3 py-2.5 text-stone-600">
+                  The props object to extend. Typically the return value of{' '}
+                  <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
+                    register()
+                  </code>{' '}
+                  from a form library, or{' '}
+                  <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
+                    {'{}'}
+                  </code>{' '}
+                  for standalone use. The original{' '}
+                  <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
+                    ref
+                  </code>{' '}
+                  callback, if present, is preserved and called after the mask
+                  ref runs.
+                </td>
+              </tr>
+              <tr className="border-b border-gray-100 last:border-0">
+                <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
+                  options.mask
+                </td>
+                <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
+                  string
+                </td>
+                <td className="px-3 py-2.5 text-stone-600">
+                  The mask pattern string. See{' '}
+                  <a
+                    href="#mask-patterns"
+                    className="underline underline-offset-2"
+                  >
+                    Mask Patterns
+                  </a>{' '}
+                  for syntax.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <p className="text-sm text-stone-600 leading-relaxed">

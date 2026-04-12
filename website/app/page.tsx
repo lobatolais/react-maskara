@@ -3,7 +3,7 @@ import { WithMaskSection } from './examples/with-mask'
 
 export default function Home() {
   return (
-    <div className="max-w-3xl mx-auto min-h-dvh flex flex-col items-center p-16">
+    <div className="max-w-3xl mx-auto min-h-dvh flex flex-col items-center pt-16 pb-8 px-4 md:p-16">
       <header className="text-center mb-18">
         <h1 className="text-4xl font-bold mb-4 text-stone-800">
           react-maskara
@@ -63,6 +63,7 @@ export default function Home() {
             </p>
           </div>
 
+          <div className="overflow-x-auto">
           <table className="w-full text-sm border border-gray-200 rounded-md overflow-hidden">
             <thead className="bg-stone-50 text-stone-600 text-left">
               <tr>
@@ -101,6 +102,7 @@ export default function Home() {
               </tr>
             </tbody>
           </table>
+          </div>
 
           <p className="text-sm text-stone-600 leading-relaxed">
             Any character that is not{' '}
@@ -124,6 +126,7 @@ export default function Home() {
             <h4 className="text-sm font-medium text-stone-700">
               Common examples
             </h4>
+            <div className="overflow-x-auto">
             <table className="w-full text-sm border border-gray-200 rounded-md overflow-hidden">
               <thead className="bg-stone-50 text-stone-600 text-left">
                 <tr>
@@ -195,6 +198,7 @@ export default function Home() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </section>
       </main>

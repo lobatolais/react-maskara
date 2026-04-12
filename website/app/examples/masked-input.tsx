@@ -39,101 +39,103 @@ export const Form = () => {
 
       <div className="space-y-2">
         <h4 className="text-sm font-medium text-stone-700">Props</h4>
-        <table className="w-full text-sm border border-gray-200 rounded-md overflow-hidden">
-          <thead className="bg-stone-50 text-stone-600 text-left">
-            <tr>
-              <th className="px-3 py-2.5 font-medium border-b border-gray-200">
-                Prop
-              </th>
-              <th className="px-3 py-2.5 font-medium border-b border-gray-200">
-                Type
-              </th>
-              <th className="px-3 py-2.5 font-medium border-b border-gray-200">
-                Required
-              </th>
-              <th className="px-3 py-2.5 font-medium border-b border-gray-200">
-                Description
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-gray-100 last:border-0">
-              <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
-                mask
-              </td>
-              <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
-                string
-              </td>
-              <td className="px-3 py-2.5 text-stone-600">Yes</td>
-              <td className="px-3 py-2.5 text-stone-600">
-                The mask pattern string. See{' '}
-                <a
-                  href="#mask-patterns"
-                  className="underline underline-offset-2"
-                >
-                  Mask Patterns
-                </a>{' '}
-                for syntax.
-              </td>
-            </tr>
-            <tr className="border-b border-gray-100 last:border-0">
-              <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
-                ref
-              </td>
-              <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
-                Ref&lt;HTMLInputElement&gt;
-              </td>
-              <td className="px-3 py-2.5 text-stone-600">No</td>
-              <td className="px-3 py-2.5 text-stone-600">
-                Forwarded to the underlying{' '}
-                <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
-                  {'<input>'}
-                </code>{' '}
-                element via{' '}
-                <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
-                  useImperativeHandle
-                </code>
-                .
-              </td>
-            </tr>
-            <tr className="border-b border-gray-100 last:border-0">
-              <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
-                ...props
-              </td>
-              <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
-                InputHTMLAttributes
-              </td>
-              <td className="px-3 py-2.5 text-stone-600">No</td>
-              <td className="px-3 py-2.5 text-stone-600">
-                All standard HTML input attributes (
-                <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
-                  id
-                </code>
-                ,{' '}
-                <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
-                  name
-                </code>
-                ,{' '}
-                <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
-                  placeholder
-                </code>
-                ,{' '}
-                <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
-                  type
-                </code>
-                ,{' '}
-                <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
-                  className
-                </code>
-                , etc.).{' '}
-                <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
-                  maxLength
-                </code>{' '}
-                is set automatically to match the mask length.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm border border-gray-200 rounded-md overflow-hidden">
+            <thead className="bg-stone-50 text-stone-600 text-left">
+              <tr>
+                <th className="px-3 py-2.5 font-medium border-b border-gray-200">
+                  Prop
+                </th>
+                <th className="px-3 py-2.5 font-medium border-b border-gray-200">
+                  Type
+                </th>
+                <th className="px-3 py-2.5 font-medium border-b border-gray-200">
+                  Required
+                </th>
+                <th className="px-3 py-2.5 font-medium border-b border-gray-200">
+                  Description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-100 last:border-0">
+                <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
+                  mask
+                </td>
+                <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
+                  string
+                </td>
+                <td className="px-3 py-2.5 text-stone-600">Yes</td>
+                <td className="px-3 py-2.5 text-stone-600">
+                  The mask pattern string. See{' '}
+                  <a
+                    href="#mask-patterns"
+                    className="underline underline-offset-2"
+                  >
+                    Mask Patterns
+                  </a>{' '}
+                  for syntax.
+                </td>
+              </tr>
+              <tr className="border-b border-gray-100 last:border-0">
+                <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
+                  ref
+                </td>
+                <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
+                  Ref&lt;HTMLInputElement&gt;
+                </td>
+                <td className="px-3 py-2.5 text-stone-600">No</td>
+                <td className="px-3 py-2.5 text-stone-600">
+                  Forwarded to the underlying{' '}
+                  <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
+                    {'<input>'}
+                  </code>{' '}
+                  element via{' '}
+                  <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
+                    useImperativeHandle
+                  </code>
+                  .
+                </td>
+              </tr>
+              <tr className="border-b border-gray-100 last:border-0">
+                <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
+                  ...props
+                </td>
+                <td className="px-3 py-2.5 text-stone-600 font-mono text-xs">
+                  InputHTMLAttributes
+                </td>
+                <td className="px-3 py-2.5 text-stone-600">No</td>
+                <td className="px-3 py-2.5 text-stone-600">
+                  All standard HTML input attributes (
+                  <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
+                    id
+                  </code>
+                  ,{' '}
+                  <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
+                    name
+                  </code>
+                  ,{' '}
+                  <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
+                    placeholder
+                  </code>
+                  ,{' '}
+                  <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
+                    type
+                  </code>
+                  ,{' '}
+                  <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
+                    className
+                  </code>
+                  , etc.).{' '}
+                  <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
+                    maxLength
+                  </code>{' '}
+                  is set automatically to match the mask length.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
   )
