@@ -10,7 +10,8 @@
     "build": "turbo run build",
     "test": "turbo test",
     "test:watch": "turbo test:watch",
-    "ci": "npm run build && npm run format:check && npm run test"
+    "ci": "npm run build && npm run format:check && npm run test",
+    "release": "changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.11",

@@ -26,7 +26,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublishOnly": "cp ../README.md . && tsc",
+    "prepublishOnly": "cp ../README.md .",
     "dev": "tsc --watch",
     "test": "vitest run",
     "test:watch": "vitest",
