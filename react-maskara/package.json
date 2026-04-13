@@ -19,12 +19,14 @@
     "url": "git+https://github.com/lobatolais/react-maskara.git"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "prepublishOnly": "cp ../README.md . && tsc",
     "dev": "tsc --watch",
     "test": "vitest run",
     "test:watch": "vitest",
