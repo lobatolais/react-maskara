@@ -1,5 +1,11 @@
 # react-maskara
 
+## 0.2.1
+
+### Patch Changes
+
+- 7732565: Add README
+
 ## 0.2.0
 
 ### Minor Changes
