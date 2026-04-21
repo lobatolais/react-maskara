@@ -4,18 +4,22 @@ import { WithMaskSection } from './examples/with-mask'
 export default function Home() {
   return (
     <div className="max-w-3xl mx-auto min-h-dvh flex flex-col items-center pt-16 pb-8 px-4 md:p-16">
-      <header className="text-center mb-18">
-        <h1 className="text-4xl font-bold mb-4 text-stone-800">
-          react-maskara
-        </h1>
-        <h2 className="text-lg text-stone-600 mb-8">
-          A lightweight, flexible input mask library for React
-        </h2>
-        <nav className="flex gap-4 justify-center">
+      <header className="mb-4 w-full flex justify-between items-start">
+        <div>
+          <h1 className="text-xl font-semibold mb-1 text-stone-800">
+            react-maskara
+          </h1>
+          <h2 className="text-base text-stone-600 mb-8">
+            A lightweight, flexible input mask library for React
+          </h2>
+        </div>
+        <nav className="flex gap-3 justify-center">
           <a
             href="https://github.com/lobatolais/react-maskara"
             target="_blank"
-            className="flex shadow-xs items-center justify-center gap-2 border-gray-300/60 border cursor-pointer rounded-md py-2 px-6 hover:bg-neutral-50 transition-all"
+            rel="noopener noreferrer"
+            aria-label="Github"
+            className="text-neutral-600 hover:text-neutral-800 before:block transition-colors before:content-[''] relative before:absolute before:z-10 before:inset-0 before:scale-150"
           >
             <svg
               width="16"
@@ -29,16 +33,26 @@ export default function Home() {
                 fill="currentColor"
                 fillRule="evenodd"
                 clipRule="evenodd"
-              ></path>
-            </svg>{' '}
-            Github
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.npmjs.com/package/react-maskara"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Github"
+            className="text-neutral-600 text-sm hover:text-neutral-800"
+          >
+            0.2.1
           </a>
         </nav>
       </header>
 
       <main className="w-full space-y-12">
         <section className="space-y-2">
-          <h3 className="text-lg font-semibold text-stone-800">Installation</h3>
+          <h3 className="text-base font-semibold text-stone-800">
+            Installation
+          </h3>
           <pre className="block border-gray-300/60 border px-3.5 py-2.5 rounded-md shadow-xs font-mono text-sm overflow-x-auto bg-stone-50 text-stone-800 leading-relaxed">
             npm i react-maskara
           </pre>
@@ -53,7 +67,7 @@ export default function Home() {
           className="space-y-5"
         >
           <div className="space-y-1.5">
-            <h3 className="text-lg font-semibold text-stone-800">
+            <h3 className="text-base font-semibold text-stone-800">
               Mask Patterns
             </h3>
             <p className="text-sm text-stone-600 leading-relaxed">
@@ -62,7 +76,6 @@ export default function Home() {
               that are inserted automatically.
             </p>
           </div>
-
           <div className="overflow-x-auto">
             <table className="w-full text-sm border border-gray-200 rounded-md overflow-hidden">
               <thead className="bg-stone-50 text-stone-600 text-left">

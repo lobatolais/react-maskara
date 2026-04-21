@@ -4,7 +4,7 @@ export const WithMaskSection = () => {
   return (
     <section className="space-y-5">
       <div className="space-y-1.5">
-        <h3 className="text-lg font-semibold text-stone-800">withMask</h3>
+        <h3 className="text-base font-semibold text-stone-800">withMask</h3>
         <p className="text-sm text-stone-600 leading-relaxed">
           A utility function that injects masking behavior into an existing
           input element by wrapping its{' '}

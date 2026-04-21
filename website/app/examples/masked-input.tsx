@@ -4,7 +4,7 @@ export const MaskedInputSection = () => {
   return (
     <section className="space-y-5">
       <div className="space-y-1.5">
-        <h3 className="text-lg font-semibold text-stone-800">MaskedInput</h3>
+        <h3 className="text-base font-semibold text-stone-800">MaskedInput</h3>
         <p className="text-sm text-stone-600 leading-relaxed">
           A ready-to-use, unstyled component that wraps a native{' '}
           <code className="font-mono text-xs bg-stone-100 px-1 py-0.5 rounded text-stone-700">
